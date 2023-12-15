@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/global.css">
+    <title>Primeiros Passos com HTML</title>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Primeiros Passos com HTML</h1>
+            <p>Juliana Chaves Palm</p>
+            <p>14/12/2023</p>
+        </section>
+    </header>
+    <main>
+        <nav id="menu">
+            <ul>
+                <li><a href="#intro">O que é HTML?</a></li>
+                <li><a href="#tags">O que são tags?</a></li>
+                <li><a href="#guia">Estrutura básica de um site</a></li>
+                <ol>
+                    <li><a href="#doctype">Doctype</a></li>
+                    <li><a href="#html">HTML - HyperText Markup Language</a></li>
+                    <li><a href="#titulo">Título</a></li>
+                    <li><a href="ol-li">Listas ordenadas e não ordenada</a></li>
+                    <li><a href="links">Links</a></li>
+                </ol>
+                <li><a href="conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+        <h2 id="intro">O que é HTML?</h2>
+        <p>HTML é uma linguagem de marcação que define a estrutura e o conteúdo de uma página web. Usando tags (etiquetas) e atributos, é possível organizar informações e elementos visuais para que sejam interpretados pelos navegadores.</p>
+        <small><a href="#menu">Voltar</a></small>
+
+        <h2 id="tags">O que são tags?</h2>
+        <p>As tags são a base da estruturação do conteúdo HTML, permitindo a organização lógica e a formatação do texto, imagens, links e outros elementos em uma página da web. Elas são interpretadas pelo navegador para renderizar o conteúdo da página conforme indicado pelas instruções contidas nelas.</p>
+        <p>Elas são compostas pelo nome do elemento entre os símbolos &lt; e &gt;. Por exemplo, para criar um parágrafo, usamos a tag <strong>&lt;p&gt;</strong> para iniciar o parágrafo e <strong>&lt;/p&gt;</strong> para fechá-lo. Dessa forma, o navegador identifica onde o parágrafo começa e termina, formatando corretamente o texto.</p>
+        <p>Algumas tags em HTML não requerem um fechamento explícito, como é o caso da tag <strong>&lt;img&gt;</strong>. Ela é usada para exibir imagens em uma página da web.</p>
+        <pre>
+            <p>&lt;img src="caminho/da/imagem.jpg" alt="Descrição da imagem" /&gt;</p>
+        </pre> 
+        <p>Note que a barra invertida ao final da tag indica que ela está completa em si mesma, não necessitando de um fechamento separado.</p>
+        <small><a href="#menu">Voltar</a></small>
+
+        <h2 id="guia">Estrutura básica de um site</h2>
+        <p>Para estruturar um site, serão necessários basicamente quatro elementos principais do HTML: <code>&lt;DOCTYPE&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, e <code>&lt;body&gt;</code>.</p>
+        <h2 id="doctype">DOCTYPE - Document Type Declaration</h2>
+        <p>O `DOCTYPE` é uma declaração que informa ao navegador sobre a versão do HTML usada no documento. Ele é essencial para garantir que o navegador interprete o código corretamente.</p>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+        </pre>
+        <h3 id="html">HTML - HyperText Markup Language</h2>
+        <p>O HTML é a base de qualquer página da web. Ele consiste em diferentes elementos, e três deles são fundamentais: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>.</p>
+        <h3>&lt;html&gt;: Define o Documento HTML</h2>
+        <p>A tag <code>&lt;html&gt;</code> é o elemento raiz de um documento HTML. Ela engloba todo o conteúdo da página e define o início e o fim do documento.</p>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-BR"&gt;
+                &lt;head&gt;
+                    &lt;!-- Metadados, como charset, título e links para estilos e scripts --&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;!-- Conteúdo visível da página, como texto, imagens, links --&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    <h3>&lt;head&gt;: Metadados e Informações do Documento</h2>
+    <p>A tag <code>&lt;head&gt;</code> contém informações sobre o documento, como o título da página, metadados, scripts, estilos e outras configurações.</p>
+    <pre>
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title>Título da Página&lt;/title&gt;
+            &lt;link rel="stylesheet" href="estilos.css"&gt;
+            &lt;script src="script.js"&gt;&lt;/script&gt;
+        &lt;/head&gt;
+    </pre>
+    <h3>&lt;body&gt;: Conteúdo Visível da Página</h2>
+    <p>A tag <code>&lt;body&gt;</code> contém o conteúdo visível da página, como texto, imagens, links, vídeos e outros elementos que os usuários visualizam.</p>
+    <pre>
+        &lt;body&gt;
+            &lt;h1&gt;Título Principal&lt;/h1&gt;
+            &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+            &lt;img src="imagem.jpg" alt="Descrição da Imagem"&gt;
+            &lt;a href="pagina.html"&gt;Link para Outra Página&lt;/a&gt;
+        &lt;/body&gt;
+    </pre>
+    <h3 id="titulo">Títulos</h3>
+    <p>Para criar títulos em HTML, usamos as tags <strong>&lt;h1&gt;</strong> até <strong>&lt;h6&gt;</strong>. Elas representam diferentes níveis de importância, sendo o <strong>&lt;h1&gt;</strong> o mais importante e o <strong>&lt;h6&gt;</strong> o menos.</p>
+    <p>Além disso, para criar parágrafos, como citado anteriormente, basta utilizar a tag <strong>&lt;p&gt;</strong>.</p>
+    <p>Exemplo:</p>
+    <pre>
+        &lt;h1&gt;Título&lt;/h1&gt;
+        &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+    </pre>
+    <small><a href="#menu">Voltar</a></small>
+    <h3 id="ol-li">Listas Ordenadas e Não Ordenadas</h2>
+    <p>As listas em HTML podem ser ordenadas ou não ordenadas. As listas ordenadas são numeradas, enquanto as não ordenadas são marcadas com bullets.</p>
+
+    <h3>Listas Ordenadas (<abbr lang="en" title="Ordered list">ol</abbr>)</h3>
+    <pre>
+        &lt;ol&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ol&gt;
+    </pre>
+    <p>Visualmente, o navegador interpretará como:</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h4>Listas Não Ordenadas (<abbr lang="en" title="Unordered list">ul</abbr>)</h3>
+    <pre>
+        &lt;ul&gt;
+            &lt;li&gt;Item A&lt;/li&gt;
+            &lt;li&gt;Item B&lt;/li&gt;
+            &lt;li&gt;Item C&lt;/li&gt;
+        &lt;/ul&gt;
+    </pre>
+    <p>Visualmente o navegador interpretará como:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <h4 id="links">Links em HTML</h2>
+    <p>Os links em HTML são elementos que permitem aos usuários navegar entre diferentes recursos da web, sejam outras páginas da internet, arquivos, seções na mesma página ou até mesmo endereços de e-mail. Os links são criados com a tag <strong>&lt;a&gt;</strong> em HTML.</p>
+    <h3>Estrutura Básica de um Link:</h3>
+    <p>Um link básico possui a seguinte estrutura:</p>
+    <pre>
+        &lt;a href="URL_do_destino"&gt;Texto do Link&lt;/a&gt;
+    </pre>
+    
+    <h3>Atributo <em>href</em>:</h3>
+    <p>O atributo mais importante de um link é o <strong>href</strong>, que determina o destino para onde o link aponta. Pode ser uma URL, um endereço de e-mail, um ID de elemento na mesma página, entre outros.</p>
+    
+    <h3>Exemplo de Link:</h3>
+    <p>Um exemplo simples de link:</p>
+    <pre>
+        &lt;a href="https://www.exemplo.com"&gt;Visite Exemplo.com&lt;/a&gt;
+    </pre>
+    
+    <h3>Link Interno na Mesma Página:</h3>
+    <p>Para criar um link interno, utiliza-se o ID do elemento como destino:</p>
+    <pre>
+        &lt;a href="#section2"&gt;Ir para a Seção 2&lt;/a&gt;
+    </pre>
+    
+    <h3>Abrir Link em Nova Aba:</h3>
+    <p>Utilize o atributo <strong>target="_blank"</strong> para abrir o link em uma nova aba:</p>
+    <pre>
+        &lt;a href="https://www.exemplo.com" target="_blank"&gt;Visite Exemplo.com em uma nova aba&lt;/a&gt;
+    </pre>
+    <h2 id="conclusao">Conclusão</h2>
+    <p>O HTML é uma linguagem fundamental para a criação e estruturação de páginas da internet. Através de tags, como <strong>&lt;p&gt;</strong>, <strong>&lt;h1&gt;</strong>, <strong>&lt;img&gt;</strong> e outras, podemos organizar e formatar o conteúdo de maneira lógica e visualmente apelativa.</p>
+    <p>As tags são elementos entre colchetes angulares <strong>&lt;</strong> e <strong>&gt;</strong> que indicam ao navegador como exibir e estruturar o conteúdo da página. Com elas, é possível criar desde cabeçalhos e parágrafos até listas ordenadas e não ordenadas.</p>
+    <p>Além disso, os links em HTML, formados pela tag <strong>&lt;a&gt;</strong>, possibilitam a conexão entre diferentes recursos da web, permitindo a navegação entre páginas, seções na mesma página, endereços de e-mail e outros destinos, definidos pelo atributo <strong>href</strong>.</p>
+    <p>A compreensão básica desses conceitos fundamentais no HTML oferece um ponto de partida sólido para a construção de páginas web, permitindo estruturar conteúdos e criar links para uma experiência mais dinâmica e informativa na internet.</p>
+    <small><a href="#menu">Voltar</a></small>       
+</main>
+    <footer>
+        <div>
+            <p>© 2023 Primeiros Passos com HTML</p>
+            <p>Desenvolvido por Juliana Chaves Palm</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
