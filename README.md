@@ -15,10 +15,18 @@ Este repositório contém o código-fonte de um site destinado a fornecer inform
 - **Links**: Informações sobre a criação de links em HTML.
 - **Conclusão**: Resumo final dos conceitos fundamentais do HTML.
 
+## Requisitos
+
+É necessário um navegador compatível com HTML5 e devidamente atualizado para visualizar o site.
+
+## Para visualizar o site
+
+Acesse o [link](https://julianachavespalm.github.io/primeiros-passos-com-html/).
+
 ## Como Usar
 
 1. Clone este repositório em sua máquina local.
-2. Abra o arquivo `index.html` em um navegador para visualizar o site.
+2. Abra o arquivo `index.html` em um navegador compatível para visualizar o site.
 3. Explore os diferentes tópicos sobre HTML apresentados no site.
 
 ## Contribuição
